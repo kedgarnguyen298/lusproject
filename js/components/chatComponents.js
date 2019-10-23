@@ -33,8 +33,8 @@ components.chat = `
                         
                     </div>
                     <div class="answer-time">
-                        <div class="answer-time-number">
-                            time
+                        <div class="answer-time-number" id="time-number">
+                            
                         </div>
                         <div class="answer-time-title">
                             Timeleft

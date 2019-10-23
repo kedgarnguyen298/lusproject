@@ -9,19 +9,23 @@ view.screens.chat = async function () {
     formChat.onsubmit = formChatSubmitHandler
 
     let currentWord = document.getElementById("current-word")
-   
+
+    let timeNumber = document.getElementById("time-number")
+    timeNumber.innerText = 10
+
+    let interval = setInterval(timeOutFunction, 1000)
+
     // currentWord.innerText = rand
 
     console.log(model.currentConversation);
-    
-    firebase.firestore().collection('waitrooms').where('code','==',model.currentConversation).get().then(function(docs){
-        docs.forEach(function(doc){
+
+    firebase.firestore().collection('waitrooms').where('code', '==', model.currentConversation).get().then(function (docs) {
+        docs.forEach(function (doc) {
             //firebase.firestore().collection('waitrooms').doc(doc.id).
             let room = doc.data()
             currentWord.innerText = room.listUsedWords[0];
         });
     });
-
 
     firebase.firestore()
         .collection("waitrooms")
@@ -71,7 +75,7 @@ view.screens.chat = async function () {
             let room = docChanges[0].doc.data()
             let listUsedWords = room.listUsedWords
             let html = ``
-            for(let word of listUsedWords){
+            for (let word of listUsedWords) {
                 html += `<div class="word-info"><span>${word}</span></div>`
             }
             document.getElementById('list-used-words').innerHTML = html;
@@ -89,7 +93,7 @@ view.screens.chat = async function () {
         let messageContent = formChat.message.value.trim()
         currentWord.innerText = messageContent
 
-         firebase.firestore()
+        firebase.firestore()
             .collection("waitrooms")
             .where("code", "==", model.currentConversation)
             .onSnapshot(function (querySnapshot) {
@@ -99,7 +103,7 @@ view.screens.chat = async function () {
                 let listWords = room.listWords
                 let roomID = docChanges[0].doc.id
 
-                 firebase.firestore()
+                firebase.firestore()
                     .collection("waitrooms")
                     .doc(roomID)
                     .update({
@@ -122,11 +126,22 @@ view.screens.chat = async function () {
             })
 
         input.value = ""
+
+        timeNumber.innerText = 10
+
     }
 
 
 
     function signOut() {
         firebase.auth().signOut()
+    }
+
+    function timeOutFunction() {
+        timeNumber.innerText -= 1
+
+        if (timeNumber.innerText == 0) {
+            timeNumber.innerText = 10
+        }
     }
 }
