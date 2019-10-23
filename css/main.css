@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    height: 38px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #eae9ea;
+/* 
+    background-color: #fcffda; */
+    font-style: italic;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 120px;
+    height: 38px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #2D1E19;
+    color: #ffffff;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+form button {
+    background-color: #2D1E19;
+}
+
+
+.leaf{
+    width:35px;
+    height:35px;
+    position: absolute;
+    /* background: url("http://www.clipartqueen.com/image-files/red-lobed-fall-clipart-leaf.png"); */
+    background: url("https://i.imgur.com/C9MqdbB.png");
+    background-size: 100% 100%;
+}
+
+.per-nav {
+    height: 40px;
+
+    background-color: #2D1E19;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.icon-btn {
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.page-container {
+    width: 100%;
+    height: 100%;
+    /* display: flex; 
+    justify-content: center; */
+    /* align-items: center; */
+    background: center center no-repeat;
+    background-color: #E3EBED;
+    background-size: cover;
+}
+
+.pr-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    height:400px;
+    width: 500px;
+    padding: 70px 50px;
+    border-radius: 12px;
+    border: solid;
+
+    background: #F8BE4F;
+}
+
+.form-header {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 30px;;
+}
+
+.form-header span {
+    font-family: 'Mansalva', cursive;
+    font-size: 60px;
+    color: #2D1E19;
+}
+
+.form-content>* {
+    margin-bottom: 10px;
+}
+
+.form-content .name-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-content .name-wrapper .input-wrapper {
+    width: 49%;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pr-select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-container {
+    height: 90%;
+    width: 700px;
+    padding: 70px 50px;
+    border-radius: 12px;
+    border: solid;
+
+    background: #F8BE4F;
+}
+
+.seclect-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seclect-content button {
+    margin: 50px;
+    width: 400px;
+    height: 100px;
+
+    background-color: #2D1E19;
+    font-size: 20px;
+}
+
+.pr-wait-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-wait-container {
+    height: 90%;
+    width: auto;
+    padding: 70px 50px;
+    border-radius: 12px;
+    border: solid;
+
+    background: #F8BE4F;
+}
+
+.wait-container {
+    height: 90%;
+    width: 700px;
+    padding: 70px 50px;
+    border-radius: 12px;
+    border: solid;
+
+    background: #F8BE4F;
+}
+
+.wait-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wait-content p {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+
+    animation: blinker 1s linear infinite;
+}
+  
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+.wait-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.wait-footer button {
+    background-color: #2D1E19;
+}
+
+.message-error {
+    padding: 5px;
+    color: #ff0000;
+}
+
+.message-success {
+    padding: 5px;
+    color: green;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+}
+
+#user-welcome {
+    color: white;
+}

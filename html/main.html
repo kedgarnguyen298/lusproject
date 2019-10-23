@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FireBase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC3ASPhoSnog7cskvLPLmOpZgdDoiwLGlo",
+            authDomain: "lus-project-31e3e.firebaseapp.com",
+            databaseURL: "https://lus-project-31e3e.firebaseio.com",
+            projectId: "lus-project-31e3e",
+            storageBucket: "lus-project-31e3e.appspot.com",
+            messagingSenderId: "869707612460",
+            appId: "1:869707612460:web:6cd173514a4c824c462c89"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Boostrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/loading.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/playRoom.css">
+
+    <!-- JS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/components/mainComponents.js"></script>
+    <script src="../js/components/authComponents.js"></script>
+    <script src="../js/components/chatComponents.js"></script>
+    <script src="../js/components/processComponents.js"></script>
+    <script src="../js/controller/mainController.js"></script>
+    <script src="../js/controller/authController.js"></script>
+    <script src="../js/controller/processController.js"></script>
+    <script src="../js/view/mainView.js"></script>
+    <script src="../js/view/authView.js"></script>
+    <script src="../js/view/chatView.js"></script>
+    <script src="../js/view/processView.js"></script>
+    <script src="../js/model/mainModel.js"></script>
+    <script src="../js/model/authModel.js"></script>
+    <script src="../js/model/chatModel.js"></script>
+
+    <!-- Tweenlite -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+
+    <title>LUS - Are you ready to Lus?</title>
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+
+</html>

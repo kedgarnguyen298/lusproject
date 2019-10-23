@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+.main-nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: #2D1E19;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.user-profile {
+    display: flex;
+    margin-right: 40px;
+}
+
+.image-size {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.image-show {
+    display: flex;
+    align-items: center;
+}
+
+.info-room {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.info-show {
+    padding-left: 10px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-show-name {
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.chat-container {
+    background: #E3EBED;
+    height: calc(100vh - 40px);
+    display:flex;
+}
+
+.chat-container .aside-left {
+    width: 30%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #dedede;
+    margin: 40px;
+}
+
+.chat-container .aside-center {
+    width: 40%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.chat-container .aside-right {
+    width: 30%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #dedede;
+    margin: 40px;
+}
+
+.name-twosides {
+    padding: 20px;
+}
+
+.name-twosides-title {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.name-center {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.name-center-title {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.line-show {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.list-players {
+    padding-top: 20px;
+    padding-left: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.list-player-left {
+    display:flex;
+}
+
+.image-player {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.image-show-player {
+    display: flex;
+    align-items: center;
+}
+
+.image-size-player {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.order-show {
+    bottom:30%;
+    right: 20%;
+    position: relative;
+}
+.order-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #d25150;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.image-order {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.info-show-player {
+    padding-left: 10px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-show-name-player {
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.dot2-show {
+    display: flex;
+    align-items: center;
+    padding-right:20px;
+}
+.dot2 {
+  height: 15px;
+  width: 15px;
+  background-color: #00aeef;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.answer {
+    /* margin: 20px; */
+    height: calc(100% - 82px);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.answer-display {
+    width: 70%;
+    height: 70%;
+    border-radius: 5px;
+    border: solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #F8BE4F;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.answer-time {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.answer-time-number{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #F8BE4F;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.answer-time-title {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.above-answer-form {
+    height: calc(100% - 120px);
+}
+
+input {
+    width: 100%;
+    height: 38px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #eae9ea;
+  }
+
+.form-chat {
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+}
+  
+.form-chat .input-wrapper {
+    width: calc(100% - 120px);
+}
+
+button {
+    width: 120px;
+    height: 38px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #d25150;
+    color: #ffffff;
+  }
+
+  .list-words {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .word-info {
+    background: #313131;
+    padding: 10px 12px;
+    border-radius: 50px;
+    color: white;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: auto;
+    height: auto; 
+    /* display: flex;
+    align-items: center; */
+    font-size: 12px;
+  }
